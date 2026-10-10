@@ -3,7 +3,8 @@ const teacherAccess = {
   MAAMMHIRAGANDA: { label: "Ma'am Mhira", matches: ["ma'am mhira", "maam mhira"] },
   SIRAIESPOGI: { label: "Sir Aies", matches: ["sir aies"] },
   SIRIANKAVOUGH: { label: "Sir Ian", matches: ["sir ian"] },
-  SIRMARKMWAA: { label: "Sir Mark", matches: ["sir mark"] }
+  SIRMARKMWAA: { label: "Sir Mark", matches: ["sir mark"] },
+  BERNALDEZTEACHERS: { label: "Bernaldez Teachers", matches: ["bernaldez teachers", "teachers"] }
 };
 
 const teacherLetters = [
@@ -12,6 +13,7 @@ const teacherLetters = [
   { name: "Acaylar - Sir Ian", path: "Acaylar/Sir Ian.html" },
   { name: "Bernaldez - Sir Ian", path: "Bernaldez/Sir Ian/index.html" },
   { name: "Bernaldez - Sir Mark", path: "Bernaldez/Sir Mark/index.html" },
+  { name: "Bernaldez - Teachers", path: "Bernaldez/Teachers/index.html" },
   { name: "Fronda - Maam Hanna", path: "Fronda/MaamHanna.html" },
   { name: "Fronda - Sir Aies", path: "Fronda/SirAies.html" },
   { name: "Fronda - Sir Ian", path: "Fronda/SirIan.html" },
@@ -41,7 +43,7 @@ const teacherLetters = [
   { name: "Tepase - Sir Ian", path: "Tepase/sirian.html" }
 ].filter((teacher) => {
   const label = teacher.name.toLowerCase();
-  return label.includes("sir") || label.includes("maam") || label.includes("ma'am");
+  return label.includes("sir") || label.includes("maam") || label.includes("ma'am") || label.includes("teachers");
 });
 
 const loginForm = document.getElementById("loginForm");
