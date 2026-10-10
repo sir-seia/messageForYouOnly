@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Sir Ian - Teachers' Day!</title>
+    <style>
+               @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Comfortaa:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Comfortaa', cursive;
+            background-color: #fce4ec; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; 
+        }
+
+       
+        .container {
+            display: flex;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            max-width: 900px;
+            width: 95%;
+            overflow: hidden;
+            border: 2px solid #ffccdd;
+        }
+
+               .left-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+                .teacher-frame {
+            position: relative;
+            padding: 10px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transform: rotate(-1.5deg); 
+        }
+
+        .teacher-frame::after {
+            content: "♥"; 
+            color: #ff6699;
+            position: absolute;
+            font-size: 45px;
+            bottom: -20px;
+            right: 15px;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+        }
+
+               .teacher-photo {
+            width: 235px;
+            height: 345px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid #fff3f8;
+            transition: transform 0.3s ease;
+        }
+
+        .teacher-photo:hover {
+            transform: scale(1.02);
+        }
+
+        /        .caption {
+            margin-top: 15px;
+            color: #888;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+               .right-panel {
+            flex: 1.2;
+            padding: 50px 40px;
+            background: linear-gradient(135deg, #fffcfd 0%, #fff6f9 100%);
+            display: flex;
+            flex-direction: column;
+        }
+
+               .main-title {
+            font-family: 'Caveat', cursive;
+            color: #ff3385;
+            font-size: 2.8rem;
+            text-align: center;
+            margin: 0 0 10px 0;
+            letter-spacing: -1px;
+            position: relative;
+        }
+
+               .title-symbols::before {
+            content: "✦ ";
+            color: #ffb3d1;
+        }
+        .title-symbols::after {
+            content: " ✦";
+            color: #ffb3d1;
+        }
+
+                .message-p {
+            color: #666;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+                .formula-hl {
+            font-family: monospace;
+            background: #fff0f5;
+            padding: 2px 6px;
+            border-radius: 5px;
+            color: #d11c7d;
+            font-size: 0.95rem;
+        }
+
+                .divider {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #ffd1dc;
+            margin: 10px 0 25px 0;
+        }
+
+                .atom-icon::before { content: "\269B"; }
+        .beaker-icon::before { content: "\2622"; }
+        .heart-icon { color: #ff6699; }
+
+               .cherish-p {
+            font-weight: 700;
+            color: #ff6699;
+            text-align: center;
+            margin-top: auto;
+            border-top: 1px dashed #ffb3d1;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+                <div class="left-panel">
+            <div class="teacher-frame">
+                              <img src="c:\Users\Lenovo\Downloads\teacher.jpg" 
+                alt= "Sir Ian and Sha9 Cutie" class="teacher-photo">
+            </div>
+            <div class="caption"><span>Sir Ian and Sha9 Cutie</span> &copy; 2026</div>
+        </div>
+
+    
+        <div class="right-panel">
+            <h1 class="main-title"><span class="title-symbols">Happy Teachers' Day, Sir Ian!</span></h1>
+
+                       <div class="divider">
+                <span class="atom-icon"></span> &nbsp; <span class="heart-icon">♥</span> &nbsp; <span class="beaker-icon"></span>
+            </div>
+
+            <p class="message-p">
+                Thank you so much for being an amazing <span class="highlight">Science</span> teacher and an incredible class adviser. You don't just teach us <span class="formula-hl">E=mc²</span>, concepts, and experiments—you make learning fun, engaging, and easy to understand.
+            </p>
+
+            <p class="message-p">
+                As our adviser, thank you for your constant patience, guidance, and support throughout this school year. We are so lucky to have been under your care.
+            </p>
+
+            <p class="cherish-p">
+                I will forever cherish all the fun memories, lessons, and moments we shared as a class. Thank you for always believing in us. <span class="formula-hl">We love you, Sir Ian !!</span> <span class="heart-icon">♥♥</span>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

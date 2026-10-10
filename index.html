@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Letter Access</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="login-panel" id="loginPanel">
+        <div class="panel-badge">Teacher Access</div>
+        <h1>Teacher Letter Portal</h1>
+        <p class="subtitle">
+          Enter the access code to open the available teacher letters.
+        </p>
+
+        <form id="loginForm" class="login-form">
+          <label for="accessCode">Access code</label>
+          <input
+            id="accessCode"
+            name="accessCode"
+            type="password"
+            placeholder="Enter code"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Unlock</button>
+        </form>
+
+        <p id="loginMessage" class="message" aria-live="polite"></p>
+      </section>
+
+      <section class="letters-panel hidden" id="lettersPanel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Available sections</p>
+            <h2>Teacher Letters for <span id="currentTeacherName">-</span></h2>
+          </div>
+          <button type="button" id="logoutBtn" class="logout-btn">Log out</button>
+        </div>
+
+        <div id="teacherGrid" class="teacher-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

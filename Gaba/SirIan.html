@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter for My Teacher</title>
+</head>
+
+<body style="margin: 0;
+            padding: 40px 16px;
+            font-family: Verdana, sans-serif;
+            background-color: #1f4d3a;
+            color: white;
+            text-align: center;">
+
+
+  <h1 style="color: #ff8c69;
+            font-size: 34px;
+            margin-bottom: 10px;">Thank You, Teacher!</h1>
+  <p style="color: #cdeedd;
+            font-size: 18px;
+            margin-top: 0;">For someone who made learning worth it</p>
+
+
+  <img src="teacher2.jpg" alt="Photo of my teacher"
+       style="width: 200px;
+              height: 250px;
+              object-fit: cover;
+              border: 8px solid white;
+              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+              transform: rotate(3deg);
+              margin: 20px 0;">
+
+  <br>
+
+  <button onclick="openLetter()"
+          style="background-color: #ff8c69;
+                color: #1f4d3a;
+                border: none;
+                border-radius: 30px;
+                padding: 14px 32px;
+                font-size: 18px;
+                font-weight: bold;
+                cursor: pointer;">
+    ✉ Open My Letter
+  </button>
+
+  <div id="overlay" onclick="closeLetter()"
+       style="display: none;
+              position: fixed; top: 0; left: 0; width: 100%;
+              height: 100%;
+              background-color: rgba(10, 35, 25, 0.75);
+              justify-content: center;
+              align-items: center;
+              padding: 16px;
+              box-sizing: border-box;">
+
+    <div onclick="event.stopPropagation()"
+         style="position: relative;
+                max-width: 560px;
+                max-height: 85vh;
+                overflow-y: auto;
+                background-color: #fdfdf7;
+                color: #333333; padding: 30px;
+                border-top: 10px solid #ff8c69;
+                border-radius: 12px;
+                text-align: left;
+                line-height: 1.7;
+                font-family: Georgia, serif;">
+
+      <button onclick="closeLetter()"
+              style="position: absolute;
+              top: 10px; right: 12px;
+              background: none;
+              border: none;
+              font-size: 26px;
+              color: #1f4d3a;
+              cursor: pointer;">
+        &times;
+      </button>
+
+      <h2 style="color: #1f4d3a;
+                margin-top: 0;">
+        Happy Teacher's Day, Sir Ian!
+      </h2>
+
+      <p style="font-size: 17px;">
+        Thank you po for making Science and CT interesting and entertaining. Kahit challenging po minsan yung topics, you explain it very well and you never get tired of answering all of our questions po.
+      </p>
+
+      <p style="color: red;
+                font-size: 17px;
+                font-weight: bold;">
+        Thank you for all the effort and patience, Sir.
+      </p>
+
+      <p style="font-size: 17px;">
+        Happy Teacher's Day po!
+      </p>
+
+      <p style="font-size: 17px;
+                text-align: right;
+                margin-bottom: 0;">
+        Thank you,<br>
+        <span style="color: #1f4d3a;
+              font-weight: bold;">Charles Alddy Gaba
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function openLetter() {
+      document.getElementById("overlay").style.display = "flex";
+    }
+
+    function closeLetter() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

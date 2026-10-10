@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f3e8">
+    <title>A little thank you | Teacher's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="greeting">
+        <header class="topline">
+            <a class="wordmark" href="#home" aria-label="A little thank you, home">
+                <span class="wordmark-mark" aria-hidden="true">✳</span>
+                <span>A LITTLE THANK YOU</span>
+            </a>
+            <p class="topline-note">Made with appreciation <span aria-hidden="true">♥</span></p>
+        </header>
+
+        <section class="hero" id="home" aria-labelledby="greeting-title">
+            <div class="message">
+                <p class="eyebrow"><span class="eyebrow-line"></span> To IS Teachers, THANK YOU!!!</p>
+                <h1 id="greeting-title">To the world, you may just be teachers.<br><span>But to your students,</span> you are HEROES.</h1>
+                <p class="message-copy">We appreciate your patience and dedication.Thank you for going above and beyond.
+                    Your care, patience, and supportive environment mean the world to us.</p>
+                <p class="message-signoff">Happy Teacher's Day!</p>
+                <div class="signature">
+                    <span class="signature-rule"></span>
+                    <span>With gratitude, Elise Mialuz Bernaldez</span>
+                </div>
+                <button class="thanks-button" id="thanks-button" type="button" aria-describedby="thanks-status">
+                    <span class="button-star" aria-hidden="true">✳</span>
+                    <span id="button-label">Send a little thanks</span>
+                    <span class="button-arrow" aria-hidden="true">↗</span>
+                </button>
+                <p class="thanks-status" id="thanks-status" aria-live="polite"></p>
+            </div>
+
+            <figure class="photo">
+                <img src="teachergroup.jpg" alt="Teachers and students at Irvinghall School celebrating Teacher's Day">
+                <figcaption class="photo-caption">
+                    <span class="caption-star" aria-hidden="true">✳</span>
+                    <span>Irvinghall School <br>Happy School<br>My HOME</span>
+                </figcaption>
+                <span class="photo-index" aria-hidden="true">01 / 01</span>
+            </figure>
+
+            <span class="corner-stamp" aria-hidden="true">TEACH<br>INSPIRE<br>REPEAT</span>
+        </section>
+
+        <footer class="bottomline">
+            <span>THE BEST LESSONS STAY WITH US</span>
+            <span class="bottomline-flower" aria-hidden="true">✳</span>
+            <span>HAPPY TEACHER'S DAY</span>
+        </footer>
+    </main>
+    <script>
+        const thanksButton = document.querySelector("#thanks-button");
+        const buttonLabel = document.querySelector("#button-label");
+        const thanksStatus = document.querySelector("#thanks-status");
+
+        thanksButton.addEventListener("click", () => {
+            buttonLabel.textContent = "Thanks sent!";
+            thanksStatus.textContent = "A little appreciation goes a long way. Thank you, teacher!";
+            thanksButton.classList.add("is-sent");
+            thanksButton.disabled = true;
+        });
+    </script>
+</body>
+</html>

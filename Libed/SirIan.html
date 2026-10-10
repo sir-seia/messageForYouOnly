@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael.Coding</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(242, 138, 63, 0.833), rgb(220, 212, 64)), url("BACKGROUND.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .middle{
+            width: 300px;
+            max-width: 80%;
+        }
+
+        button {
+            padding: 50px 70px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            background: rgb(243, 242, 242);
+        }
+
+        #popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(248, 239, 74, 0.995);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background: rgb(255, 155, 40);
+            width: 350px;
+            max-width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box img{
+            width: 220px;
+            height: 220 px;
+            object-fit: cover;
+
+
+
+        }
+    
+        .box p {
+            text-align: left;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <img class="middle" src="src/sian.jfif" alt="photo">
+
+    <button onclick="document.getElementById('popup').style.display='flex'">
+        Click for 100 pesos!!!
+    </button>
+
+    <div id="popup">
+        <div class="box">
+
+
+            <img src="src/sian.jfif">
+
+            <h3>HELLO SIR IAN HAPPY TEACHER'S DAY PO!!</h3>
+            <p>
+                Sir Ian, <br><br>
+                
+                Hello sir, maraming salamat po sa mga natutunan ko sayo at sa pag gabay 
+                nyo samin, kung paano namin gagawin at susulusyunan ang mga kailangan gawin.
+                ayun lang sir. Maraming salamat po.<br><br>
+                 
+                
+                
+                
+                Nagmamahal :Rafael batong bakal 
+                
+                
+
+    
+            </p>
+            <button onclick="document.getElementById('popup').style.display='none'">Close</button>
+
+
+       
+  
+
+</body>
+</html>

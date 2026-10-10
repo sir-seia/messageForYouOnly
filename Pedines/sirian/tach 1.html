@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACK.EXE</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(255, 140, 0, 0.5), rgba(200, 30, 60, 0.5)), url("BACKGROUND.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .middle{
+            width: 300px;
+            max-width: 80%;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        #popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background: rgba(233, 230, 230, 0.877);
+            width: 350px;
+            max-width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box img{
+            width: 120px;
+            height: 120 px;
+            object-fit: cover;
+
+
+
+        }
+    
+        .box p {
+            text-align: left;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <img class="middle" src="salamat.webp" alt="photo">
+
+    <button onclick="document.getElementById('popup').style.display='flex'">
+        CLICK FOR A COOKIE
+    </button>
+
+    <div id="popup">
+        <div class="box">
+
+
+            <img src="teacher.jpg.jpg">
+
+            <h3>Happy Teacher's Day po Sir Ian!!!</h3>
+            <p>
+                Dear Sir Ian, <br><br>
+                
+                Thank you sa almost 3 years? na teaching niyo
+                po saamin. Marami po akong natutunan specially
+                sa science and lessons about life. Thank you
+                po for your unwavering teaching to students.
+                Kayo po ang reason sir kung bakit favorite ko
+                ang science. Thank you for your service sir, God bless
+                and stay awesome and pogi!
+                <br><br>
+                Happy teachers day sir!!!!
+    
+            </p>
+            
+            <button id="musicBtn" onclick="toggleMusic()">▶ Play Music</button>
+            <button onclick="closePopup()">Close</button>
+
+            <audio id="music" src="RM.mp3" loop></audio>
+        </div>
+    </div>
+
+    <script>
+        const music = document.getElementById('music');
+        const musicBtn = document.getElementById('musicBtn');
+
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+                musicBtn.textContent = '⏸ Pause Music';
+            } else {
+                music.pause();
+                musicBtn.textContent = '▶ Play Music';
+            }
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            music.pause();
+            music.currentTime = 0;
+            musicBtn.textContent = '▶ Play Music';
+        }
+    </script>
+
+
+       
+  
+
+</body>
+</html>
