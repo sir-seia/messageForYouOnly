@@ -4,7 +4,7 @@ const teacherAccess = {
   SIRAIESPOGI: { label: "Sir Aies", matches: ["sir aies"] },
   SIRIANKAVOUGH: { label: "Sir Ian", matches: ["sir ian"] },
   SIRMARKMWAA: { label: "Sir Mark", matches: ["sir mark"] },
-  BERNALDEZTEACHERS: { label: "Bernaldez Teachers", matches: ["bernaldez teachers", "teachers"] }
+  FORYOU: { label: "Bernaldez Teachers", matches: ["bernaldez teachers", "teachers"] }
 };
 
 const teacherLetters = [
